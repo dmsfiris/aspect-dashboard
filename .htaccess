@@ -1,0 +1,35 @@
+########################################
+# Deny Access to Sensitive Files
+########################################
+
+<FilesMatch "\.(env|ini|bak|conf|config|sql|log|lock)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(composer\.json|composer\.lock|package\.json|package-lock\.json)$">
+    Require all denied
+</FilesMatch>
+
+########################################
+# Deny Access to Sensitive Directories
+# (Safe for .htaccess — use RedirectMatch)
+########################################
+
+# Prevent access to node_modules and vendor anywhere under web root
+RedirectMatch 403 ^/(.*)?(node_modules|vendor)(/|$)
+
+########################################
+# Disable Directory Listing
+########################################
+
+Options -Indexes
+
+########################################
+# Security Headers
+########################################
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>

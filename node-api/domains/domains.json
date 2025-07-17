@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "domain": "storeone.example",
+    "status": "Active",
+    "store_id": 1
+  },
+  {
+    "id": 2,
+    "domain": "techgears.example",
+    "status": "Pending DNS",
+    "store_id": 2
+  },
+  {
+    "id": 3,
+    "domain": "homeplus.example",
+    "status": "Active",
+    "store_id": 1
+  }
+]

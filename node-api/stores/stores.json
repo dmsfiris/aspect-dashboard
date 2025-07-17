@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "StoreOne",
+    "owner": "Alice",
+    "contact_email": "alice@example.com"
+  },
+  {
+    "id": 2,
+    "name": "TechGears",
+    "owner": "Bob",
+    "contact_email": "bob@example.com"
+  }
+]

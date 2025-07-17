@@ -1,0 +1,64 @@
+# =====================
+# ENVIRONMENT FILES
+# =====================
+.env.*.local
+
+# =====================
+# DEPENDENCIES
+# =====================
+**/node_modules/
+vendor/
+
+# =====================
+# LOGS & DEBUG FILES
+# =====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.cache
+*.tmp
+*.swp
+
+# =====================
+# SYSTEM FILES
+# =====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================
+# IDE / EDITOR FILES
+# =====================
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =====================
+# OS FILES
+# =====================
+ehthumbs.db
+Icon?
+._*
+
+# =====================
+# BUILD / DIST FILES
+# =====================
+dist/
+build/
+coverage/
+
+# =====================
+# COMPOSER
+# =====================
+composer.lock
+
+# =====================
+# MISC
+# =====================
+*.bak
+*.old
+*.orig
+*.pid
+config.bat

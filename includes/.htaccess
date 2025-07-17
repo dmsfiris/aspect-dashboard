@@ -1,0 +1,5 @@
+# Deny direct access to all files in this folder
+<FilesMatch "\.(php|html|htm)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
